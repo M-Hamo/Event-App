@@ -1,0 +1,8 @@
+.error input{
+    border: 1.5px red solid;
+}
+em{
+    float: right;
+    color: red;
+    padding-left: 10px;
+}

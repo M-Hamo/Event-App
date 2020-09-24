@@ -1,0 +1,13 @@
+<div>
+    <!-- <h1 class="text-center">Hello There</h1>
+    <hr> -->
+    <div class="row">
+        <div id="event-style" class="col-md-5" *ngFor = "let event of events" >
+            <event-thumbnail (click) = "handelThumbnailClick(event.name)" [event] = "event" #thumbnail  ></event-thumbnail> 
+        </div>
+    </div>
+    <!--this is outed from selector soon (eventClick) = "handelEventClicked($event)"-->
+    <!-- Template referand variable can use in html component to access any thing from that component like that.. -->
+    <!-- <button (click) = "thumbnail.logFoo()">click me</button> -->
+</div>
+

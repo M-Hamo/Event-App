@@ -1,0 +1,14 @@
+<div (click)="toggleContent()" class="well  hoverWell">
+
+    <div style="float: right;">
+        <i *ngIf="!visible" class="fa fa-chevron-circle-up fa-3x" style="color:tomato;"></i>
+        <i *ngIf="visible" class="fa fa-chevron-circle-down fa-3x"></i>
+    </div>
+
+    <h4>
+        <ng-content select = "[well-title]"></ng-content>
+    </h4>
+
+    <!-- content goes here -->
+    <ng-content select = "[well-body]" *ngIf="!visible"></ng-content>
+</div>

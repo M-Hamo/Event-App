@@ -1,0 +1,10 @@
+em{
+    float:right;
+    color: rgb(190, 139, 139);
+    padding-left: 10px;
+}
+.error input{
+    border: 1.5px rgb(190, 139, 139) solid;
+}
+.error ::-webkit-input-placeholder{color: #999;}
+
